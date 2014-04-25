@@ -12,8 +12,8 @@ public class AICarMovement : MonoBehaviour {
 	public void OnNextTrigger(TrackLapTrigger next) {
 
 		// choose a target to drive towards
-		target = Vector3.Lerp(next.transform.position - next.transform.right, 
-		                      next.transform.position + next.transform.right, 
+		target = Vector3.Lerp(next.transform.position - next.transform.up, 
+		                      next.transform.position + next.transform.up, 
 		                      Random.value);
 	}
 
